@@ -8,12 +8,10 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import javax.persistence.EntityListeners;
-
 @SpringBootApplication
 @EnableTransactionManagement
 @EnableCaching
-@ComponentScan(basePackages = {"com.user"})
+@ComponentScan(basePackages = { "com.user" })
 @EntityScan("com.user.model")
 @EnableJpaRepositories("com.user.repository")
 public class HouseHoldApplication {
@@ -24,4 +22,3 @@ public class HouseHoldApplication {
 	}
 
 }
-
